@@ -280,6 +280,9 @@ nav .blank {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
+  max-width: 400px !important;
+  min-width: 300px !important;
+  font-size: 15px;
 }
 
 
