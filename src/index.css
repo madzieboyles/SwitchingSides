@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.notBlank {
+  display: flex;  
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("noise.png");
+  background-size: 500px 500px;
+  background-repeat: repeat;
+  opacity: 0.2;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.blank {
+  display: flex;  
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  font-family: 'Bebas neue';
+  list-style-type: none;
+  padding: 10px;
+  color: white;
+  z-index: 2;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  list-style-type: none;
+  color: white;
+  z-index: 2;
+}
+
+
+ul li a:hover {
+  color: rgb(249, 123, 249);
+}
+
+ul li a.active {
+  color: rgb(249, 123, 249);
+}

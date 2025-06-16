@@ -1,0 +1,420 @@
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Roboto Flex', sans-serif;
+  background: linear-gradient(to right, #62083e 50%, #223454 50%);
+  color: white;
+}
+
+.page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- COVER ---------- */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-split {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #62083e 50%, #223454 50%);
+  z-index: 0;
+}
+
+.noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("noise.png");
+  background-size: 500px 500px;
+  background-repeat: repeat;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+nav .blank {
+  display: flex;  
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.hero-layer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.pressure {
+  top: 5%;
+  z-index: 3;
+}
+
+.stars {
+  top: 3%;
+  z-index: 2;
+}
+
+.fist {
+  top: 5%;
+  z-index: 4;
+}
+
+.wall {
+  bottom: 0;
+  z-index: 5;
+}
+
+.frame {
+  z-index: 3;
+}
+
+/* ---------- MAIN ELEMENTS ---------- */
+.pressure-wrapper {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.sifthand {
+  height: 700px;
+  width: auto;
+  pointer-events: auto;
+  transition: transform 0.3s ease-out;
+}
+
+.unstars {
+  height: 900px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+}
+
+.wall img,
+.wall {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---------- SECOND SECTION ---------- */
+.scroll-section {
+  position: relative;
+  justify-content: center;
+  height: 340vh;
+}
+
+.textintro {
+  position: absolute;
+  top: -40px;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: 'Bebas Neue';
+  font-size: 5rem;
+  color: white;
+  z-index: 6;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.p_intro {
+  position: absolute;
+  top: 190px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Space Grotesk';
+  font-size: 1rem;
+  color: white;
+  z-index: 6;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.567);
+}
+
+.normal {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  height: auto;
+  padding: 20px;
+  font-family: 'Space Grotesk';
+  font-size: 1rem;
+  color: white;
+  z-index: 3;
+}
+
+
+
+.globe-container {
+  position: relative;
+  top: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  z-index: 2;
+}
+
+.hover-zone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.info-box {
+  position: absolute;
+  top: 45%;
+  left: 10%; 
+  width: 80%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-family: 'Space Grotesk';
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  z-index: 20;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.info-box.left,
+.info-box.right {
+  left: 10%; 
+}
+
+.hover-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 30;
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
+  transition: background 0.2s ease-in-out;
+}
+
+
+
+.globe {
+  width: 150vmin;
+  height: auto;
+  object-fit: contain;
+  pointer-events: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+}
+
+.scroll-description {
+  position: relative;
+  top: 400px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Space Grotesk';
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+  z-index: 6;
+}
+
+.map-section {
+  position: relative;
+  width: 100%;
+  height: 140vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: center;
+  z-index: 5;
+}
+
+
+.mapbox-container {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  z-index: 7;
+}
+
+.mapbox {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 7;
+}
+
+
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('robotoflex.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('WorkSans-VariableFont_wght.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('SpaceGrotesk-Regular.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk Bold';
+  src: url('SpaceGrotesk-Bold.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('BebasNeue-Regular.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* ---------- RESPONSIVE STYLE ---------- */
+
+@media (max-width: 1024px) {
+ .pressure-wrapper {
+    top: 4%;
+    font-size: 7vw;
+  }
+  
+  .wall, .wall img {
+  position: absolute;
+  width: auto;
+  height: 200px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 5;
+  }
+
+  .unstars {
+    position: relative;
+    height: 70vh;
+    top: 110px;
+  }
+
+  .sifthand {
+    position: relative;
+    bottom: -200px;
+    height: 75vh;
+    width: auto;
+    pointer-events:none ;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .pressure-wrapper {
+    top: 4%;
+    font-size: 7vw;
+  }
+  
+  .wall, .wall img {
+  position: absolute;
+  width: auto;
+  height: 200px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 5;
+  }
+
+  .unstars {
+    position: relative;
+    height: 70vh;
+    top: 90px;
+  }
+
+  .sifthand {
+    position: relative;
+    bottom: -100px;
+    height: 80vh;
+    width: auto;
+    pointer-events:none ;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .pressure-wrapper {
+    top: 3%;
+    font-size: 9vw;
+  }
+
+  .wall, .wall img {
+  position: absolute;
+  width: auto;
+  height: 20vh;
+  left: 0px;
+  bottom: 0px;
+  z-index: 5;
+  }
+
+  .unstars {
+    position: relative;
+    height: 50vh;
+    top: 70px;
+  }
+
+  .sifthand {
+    position: relative;
+    bottom: -100px;
+    height: 80vh;
+    pointer-events:none ;
+    z-index: 4;
+  }
+}
+
+.static-title {
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 17vw;
+  text-align: center;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
