@@ -276,6 +276,12 @@ nav .blank {
   z-index: 7;
 }
 
+.mapboxgl-popup-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 
 
 @font-face {
