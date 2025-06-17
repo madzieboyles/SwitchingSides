@@ -86,7 +86,7 @@ function MapPage() {
         </section>
 
       {/* Section 3: Map */}
-
+      <p className="center-text">This project assesses the left and right political shifts in the last two election periods of four countries in Central Europe to detect the presence and characteristics of polarization in Central Europe. The shift is calculated for the far-side parties. If there are no far-side parties, the shift was calculated from center parties. Due to data availability, in Czechia only the biggest regions (kraj) were used due to lack of open statistical information.</p>
       <section className="map-section">
           <div className="city-plot">
             <svg height="300" width="300" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 500">
@@ -127,6 +127,7 @@ function MapPage() {
         <p className="legend-text">How has your city shifted? Compare the shift position of your city to that of others. See how the legend changes to accomodate the wide range of political shifts throughout Central Europe.</p>
         <div className="city-svg-container">
           <svg className="city-svg" id="Landscape_Graph" data-name="Landscape Graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <rect class="backing" x="20" y="0" width="395" height="390" rx="10" ry="10"/>
             <rect class="cls-30" x="246.56" y="224.95" width="149.65" height="147.23"/>
             <rect class="cls-34" x="38.07" y="14.03" width="145.38" height="150.18"/>
             <rect class="cls-22" x="183.45" y="14.03" width="67.48" height="150.09"/>
