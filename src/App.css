@@ -285,7 +285,47 @@ nav .blank {
   font-size: 15px;
 }
 
+.city-plot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  justify-content: center;
+  z-index: 1;
+}
 
+.city-plot1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+  z-index: 1;
+}
+
+.city-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+}
+
+.city-svg {
+  width: 80%; 
+  height: auto; 
+  max-width: 500px; 
+  max-height: 500px; 
+}
+
+.legend-text {
+  font-family: 'Space Grotesk', sans-serif;
+  width: 40%;
+  height: 75%;
+  font-size: 17px;
+}
 
 @font-face {
   font-family: 'Roboto Flex';
@@ -321,6 +361,144 @@ nav .blank {
   font-weight: 100 900;
   font-style: normal;
 }
+
+/* -----SVG Element Design--------- */
+text {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+           .cls-1 {
+                letter-spacing: em;
+              }
+
+              .cls-2 {
+                letter-spacing: 0em;
+              }
+
+              .cls-2, .cls-3, .cls-4, .cls-5 {
+                color: black;
+                font-family: 'Roboto Flex', sans-serif;
+              }
+
+              circle:hover {
+                stroke-width: 5;
+                fill: white;
+              }
+
+              rect:hover {
+                fill: white;
+                opacity: 0.7;
+              }
+
+              .cls-2, .cls-5 {
+                font-size: 6px;
+              }
+
+              .cls-6 {
+                fill: #f5f3f3;
+              }
+
+              .cls-7 {
+                fill: #e0b0aa;
+              }
+
+              .cls-9 {
+                fill: #c6c1c1;
+              }
+
+              .cls-17 {
+                fill: #9962bf;
+              }
+
+              .cls-19 {
+                fill: #cad7e3;
+              }
+
+              .cls-22 {
+                fill: #d24d6f;
+              }
+
+              .cls-3 {
+                font-size: 10px;
+              }
+
+              .cls-30 {
+                fill: #687adf;
+              }
+
+              .cls-4 {
+                font-size: 9px;
+              }
+
+              .cls-34 {
+                fill: #d9513e;
+              }
+
+              .cls-39 {
+                fill: none;
+                stroke: #231f20;
+                stroke-miterlimit: 10;
+              }
+
+              .cls-40 {
+                fill: #ca499f;
+              }
+
+                  .ccls-2 {
+                    fill: #f5f3f3;
+                  }
+
+                  .ccls-3 {
+                    fill: #e0b0aa;
+                  }
+
+                  .ccls-4 {
+                    fill: #c6c1c1;
+                  }
+
+                  .ccls-7 {
+                    fill: #9962bf;
+                  }
+
+                  .ccls-9 {
+                    fill: #cad7e3;
+                  }
+
+                  .ccls-10 {
+                    color: white;
+                    font-size: 30px;
+                  }
+
+                  .ccls-10, .ccls-11 {
+                    color: white;
+                    font-family: MyriadPro-Regular, 'Myriad Pro';
+                  }
+
+                  .ccls-12 {
+                    fill: #d24d6f;
+                  }
+
+                  .ccls-14 {
+                    fill: #687adf;
+                  }
+
+                  .ccls-11 {
+                    font-size: 24px;
+                  }
+
+                  .ccls-15 {
+                    fill: #d9513e;
+                  }
+
+                  .ccls-16 {
+                    fill: none;
+                    stroke: #231f20;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .ccls-17 {
+                    fill: #ca499f;
+                  }
 
 /* ---------- RESPONSIVE STYLE ---------- */
 
