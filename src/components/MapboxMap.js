@@ -12,16 +12,18 @@ const MapboxMap = () => {
     const screenWidth = window.innerWidth;
     const initialZoom = screenWidth < 800 ? 3.5 : 4.7;
 
+    const center_y = screenWidth < 800 ? 14.5 : 15;
+
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/artkis7/cmbuulcx0014z01qwg9cl4rus',
-      center: [14, 51],
+      center: [center_y, 51],
       zoom: initialZoom,
       maxZoom: 8,
       minZoom: initialZoom,
       maxBounds: [
-        [3, 20],   // SW corner
-        [37, 70]   // NE corner
+        [-20, 20],   // SW corner
+        [42, 65]   // NE corner
       ]
     });
 
