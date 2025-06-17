@@ -562,6 +562,24 @@ text {
     pointer-events:none ;
     z-index: 4;
   }
+
+  .city-plot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .legend-text {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 40%;
+    height: 75%;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -592,6 +610,24 @@ text {
     height: 80vh;
     pointer-events:none ;
     z-index: 4;
+  }
+
+  .city-plot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .legend-text {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 40%;
+    height: 75%;
+    font-size: 8px;
   }
 }
 
