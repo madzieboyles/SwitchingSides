@@ -25,6 +25,20 @@ const MapboxMap = () => {
       ]
     });
 
+    map.scrollZoom.disable(); // disable scroll zoom initially
+
+    // Enable scroll zoom when user clicks on the map
+    map.on('click', () => {
+      map.scrollZoom.enable();
+    });
+
+    // Listen to zoom events to disable scroll zoom if at max zoom
+    map.on('zoomend', () => {
+      if (map.getZoom() <= 5) {
+        map.scrollZoom.disable();
+      }
+});
+
     map.on('click', (e) => {
       const features = map.queryRenderedFeatures(e.point);
       if (!features.length) {
