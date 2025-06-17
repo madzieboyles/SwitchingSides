@@ -185,6 +185,7 @@ function Home() {
         <div className="background-split"></div>
         <div className="noise"></div>
       </section>
+    <div className="notBlank"><Navbar /></div>
     </div>
   );
 }
