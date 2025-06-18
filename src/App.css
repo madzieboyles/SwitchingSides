@@ -9,6 +9,8 @@ body {
 .page {
   width: 100%;
   overflow-x: hidden;
+  overflow-x: hidden;
+  justify-content: center;
 }
 
 /* ---------- COVER ---------- */
@@ -122,8 +124,12 @@ nav .blank {
 /* ---------- SECOND SECTION ---------- */
 .scroll-section {
   position: relative;
-  justify-content: center;
-  height: 340vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem 1rem 12rem 1rem;
+  min-height: 200vh; 
 }
 
 .textintro {
@@ -372,6 +378,64 @@ nav .blank {
   font-style: normal;
 }
 
+#frame {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  border: none;
+  top: 0px;
+}
+
+.party-analysis {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.party-analysis p {
+  break-inside: avoid-column;
+  margin-bottom: 1.5rem;
+}
+
+.references {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  column-count: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.mapdata {
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.mapdata h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.mapdata p {
+  margin-bottom: 1rem;
+}
+
 /* -----SVG Element Design--------- */
 text {
   font-family: 'Roboto Flex', sans-serif;
@@ -522,6 +586,10 @@ text {
     top: 4%;
     font-size: 7vw;
   }
+
+  .body {
+    height: 100%;
+  }
   
   .wall, .wall img {
   position: absolute;
@@ -545,6 +613,51 @@ text {
     width: auto;
     pointer-events:none ;
     z-index: 4;
+  }
+
+  .textintro {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .p_intro {
+    font-size: 0.9rem;
+    top: 200px;
+    padding: 0 1.5rem;
+  }
+
+  .globe-container {
+    top: 580px;
+    height: 80vh;
+  }
+
+  .globe {
+    width: 80vmin;
+  }
+
+ 
+  .scroll-section {
+    padding-bottom: 30rem; 
+    min-height: auto;
+  }
+
+  .scroll-description {
+    top: 300px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  .info-box {
+    pointer-events: none;
+  }
+  
+
+  .hover-circle {
+    pointer-events: none;
+  }
+
+  #frame {
+    height: 2000px;
   }
 }
 
@@ -604,6 +717,74 @@ text {
     margin: auto;
     font-size: 15px;
   }
+  .textintro {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .p_intro {
+    font-size: 0.9rem;
+    top: 160px;
+    padding: 0 1.5rem;
+  }
+
+  .globe-container {
+    top: 300px;
+    height: 80vh;
+  }
+
+  .globe {
+    width: 80vmin;
+    margin: 10vh;
+  }
+
+  .scroll-section {
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+
+  .scroll-description {
+    top: 10px;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .info-box {
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .hover-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  #frame {
+    height: 2000px;
+  }
+  
+  .party-analysis {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    column-count: 1;
+    padding: 1rem;
+  }
+
+  .party-analysis {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    column-count: 1;
+    padding: 1rem;
+  }
+   .mapdata {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .mapdata h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -662,6 +843,54 @@ text {
     margin: auto;
     font-size: 12px;
   }
+
+  .textintro {
+    font-size: 2.2rem;
+    padding: 1rem;
+  }
+
+  .p_intro {
+    font-size: 0.85rem;
+    top: 140px;
+    padding: 0 1rem;
+  }
+
+  .globe-container {
+    top: 450px;
+    height: 70vh;
+  }
+
+  .globe {
+    width: 90vmin;
+    margin: 5vh;
+  }
+
+  .scroll-section {
+    padding-bottom: 10rem; 
+    min-height: auto;
+  }
+
+  .scroll-description {
+    top: 0px;
+    font-size: 1rem;
+    padding: 0rem;
+  }
+
+  .info-box {
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 92%;
+    left: 4%;
+  }
+
+  .hover-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  #frame {
+    height: 2030px;
+  }
 }
 
 .static-title {
@@ -672,5 +901,5 @@ text {
   margin: 0;
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 3;
 }
