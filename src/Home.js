@@ -68,11 +68,9 @@ function Home() {
 
   return (
     <div className="page">
-      <div className="notBlank"><Navbar /></div>
       {/* Section 1: TextPressure */}
       <section className="hero-section">
         <div className="noise"></div>
-        
               <div className="pressure-wrapper">
           {!isMobile ? (
             <TextPressure
