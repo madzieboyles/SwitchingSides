@@ -93,6 +93,7 @@ nav .blank {
   position: relative;
   width: 95%;
   height: 100%;
+  margin: auto;
   overflow: hidden;
   z-index: 3;
 }
