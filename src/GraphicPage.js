@@ -66,7 +66,6 @@ function GraphicPage() {
 
   return (
     <div className="page">
-      <div className="blank"><Navbar /></div>
       <section>
              <div className="pressure-wrapper">
           {!isMobile ? (
