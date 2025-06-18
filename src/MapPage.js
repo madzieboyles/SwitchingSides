@@ -221,6 +221,34 @@ function MapPage() {
         </div>
       </section>
 
+     <section className="mapdata">
+        <h2>Map Data</h2>
+        <h3>Austria</h3>
+        <p>Bundesministerium für Inneres. (2019). Nationalratswahl 2019 – Endgültiges Ergebnis.
+        Retrieved from Österreich - Nationalratswahl 2019
+        Bundesministerium für Inneres. (2024). Nationalratswahl 2024 – Vorläufiges Ergebnis.
+        Retrieved from Österreich - Nationalratswahl 2024
+        </p>
+        <h3>Czech Republic</h3>
+        <p>
+          Český statistický úřad. Volby.cz (n.d.).– Results of elections and referendums 2021 and
+          2023. Retrieved from https://www.volby.cz/index_en.htm
+        </p>
+        <h3>Germany</h3>
+        <p>German Election Database. (n.d.). Bundestag elections 2021 and 2025. Retrieved from
+          Data download | German Election Database GERDA
+        </p>
+
+        <h3>Poland</h3>
+        <p>
+          Państwowa Komisja Wyborcza. (2023). Wybory do Sejmu i Senatu Rzeczypospolitej
+          Polskiej 2023. Retrieved from https://sejmsenat2023.pkw.gov.pl/sejmsenat2023/
+          Państwowa Komisja Wyborcza. (2019). Wybory do Sejmu i Senatu Rzeczypospolitej
+          Polskiej 2019. Retrieved from https://sejmsenat2019.pkw.gov.pl/sejmsenat2019/
+        </p>
+
+      </section>
+
     </div>
   );
 }
