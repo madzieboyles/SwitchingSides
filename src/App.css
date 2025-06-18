@@ -9,14 +9,13 @@ body {
 .page {
   width: 100%;
   overflow-x: hidden;
-  overflow-x: hidden;
   justify-content: center;
 }
 
 /* ---------- COVER ---------- */
 .hero-section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
@@ -128,14 +127,13 @@ nav .blank {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 6rem 1rem 12rem 1rem;
-  min-height: 300vh; 
+  padding: 4rem 1rem 12rem 1rem;
+  min-height: auto;
 }
 
 .textintro {
-  position: absolute;
-  top: -40px;
-  padding: 0;
+  position: relative;
+  padding: 2rem 0 1rem 0;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -149,12 +147,12 @@ nav .blank {
 }
 
 .p_intro {
-  position: absolute;
-  top: 190px;
+  position: relative;
+  margin: 2rem auto;
   justify-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   font-family: 'Space Grotesk';
   font-size: 1rem;
@@ -169,7 +167,6 @@ nav .blank {
   text-align: center;
   width: 100%;
   height: auto;
-  height: auto;
   padding: 20px;
   font-family: 'Space Grotesk';
   font-size: 1rem;
@@ -177,11 +174,9 @@ nav .blank {
   z-index: 3;
 }
 
-
-
 .globe-container {
   position: relative;
-  top: 600px;
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,8 +226,6 @@ nav .blank {
   transition: background 0.2s ease-in-out;
 }
 
-
-
 .globe {
   width: 150vmin;
   height: auto;
@@ -243,9 +236,8 @@ nav .blank {
 
 .scroll-description {
   position: relative;
-  top: 400px;
+  margin: 3rem auto;
   width: 80%;
-  margin: 0 auto;
   font-family: 'Space Grotesk';
   font-size: 1.4rem;
   line-height: 1.7;
@@ -266,7 +258,6 @@ nav .blank {
   justify-content: center;
   z-index: 5;
 }
-
 
 .mapbox-container {
   width: 90%;
@@ -343,39 +334,15 @@ nav .blank {
   font-size: 22px;
 }
 
-@font-face {
-  font-family: 'Roboto Flex';
-  src: url('robotoflex.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('WorkSans-VariableFont_wght.ttf') format('TrueType');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('SpaceGrotesk-Regular.ttf') format('TrueType');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk Bold';
-  src: url('SpaceGrotesk-Bold.ttf') format('TrueType');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url('BebasNeue-Regular.ttf') format('TrueType');
-  font-weight: 100 900;
-  font-style: normal;
+.static-title {
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 17vw;
+  text-align: center;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
 #frame {
@@ -436,153 +403,189 @@ nav .blank {
   margin-bottom: 1rem;
 }
 
+/* ---------- FONT FACES ---------- */
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('robotoflex.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('WorkSans-VariableFont_wght.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('SpaceGrotesk-Regular.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk Bold';
+  src: url('SpaceGrotesk-Bold.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('BebasNeue-Regular.ttf') format('TrueType');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 /* -----SVG Element Design--------- */
 text {
   font-family: 'Roboto Flex', sans-serif;
 }
 
-           .cls-1 {
-                letter-spacing: em;
-              }
+.cls-1 {
+  letter-spacing: em;
+}
 
-              .cls-2 {
-                letter-spacing: 0em;
-              }
+.cls-2 {
+  letter-spacing: 0em;
+}
 
-              .cls-2, .cls-3, .cls-4, .cls-5 {
-                color: black;
-                font-family: 'Roboto Flex', sans-serif;
-              }
+.cls-2, .cls-3, .cls-4, .cls-5 {
+  color: black;
+  font-family: 'Roboto Flex', sans-serif;
+}
 
-              circle:hover {
-                stroke-width: 5;
-                fill: white;
-              }
+circle:hover {
+  stroke-width: 5;
+  fill: white;
+}
 
-              rect:hover {
-                fill: white;
-                opacity: 0.7;
-              }
+rect:hover {
+  fill: white;
+  opacity: 0.7;
+}
 
-              .backing {
-                fill: #f0f0f0;
-                border-radius: 15px;
-              }
+.backing {
+  fill: #f0f0f0;
+  border-radius: 15px;
+}
 
-              .cls-2, .cls-5 {
-                font-size: 6px;
-              }
+.cls-2, .cls-5 {
+  font-size: 6px;
+}
 
-              .cls-6 {
-                fill: #f5f3f3;
-              }
+.cls-6 {
+  fill: #f5f3f3;
+}
 
-              .cls-7 {
-                fill: #e0b0aa;
-              }
+.cls-7 {
+  fill: #e0b0aa;
+}
 
-              .cls-9 {
-                fill: #c6c1c1;
-              }
+.cls-9 {
+  fill: #c6c1c1;
+}
 
-              .cls-17 {
-                fill: #9962bf;
-              }
+.cls-17 {
+  fill: #9962bf;
+}
 
-              .cls-19 {
-                fill: #cad7e3;
-              }
+.cls-19 {
+  fill: #cad7e3;
+}
 
-              .cls-22 {
-                fill: #d24d6f;
-              }
+.cls-22 {
+  fill: #d24d6f;
+}
 
-              .cls-3 {
-                font-size: 10px;
-              }
+.cls-3 {
+  font-size: 10px;
+}
 
-              .cls-30 {
-                fill: #687adf;
-              }
+.cls-30 {
+  fill: #687adf;
+}
 
-              .cls-4 {
-                font-size: 9px;
-              }
+.cls-4 {
+  font-size: 9px;
+}
 
-              .cls-34 {
-                fill: #d9513e;
-              }
+.cls-34 {
+  fill: #d9513e;
+}
 
-              .cls-39 {
-                fill: none;
-                stroke: #231f20;
-                stroke-miterlimit: 10;
-              }
+.cls-39 {
+  fill: none;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
 
-              .cls-40 {
-                fill: #ca499f;
-              }
+.cls-40 {
+  fill: #ca499f;
+}
 
-                  .ccls-2 {
-                    fill: #f5f3f3;
-                  }
+.ccls-2 {
+  fill: #f5f3f3;
+}
 
-                  .ccls-3 {
-                    fill: #e0b0aa;
-                  }
+.ccls-3 {
+  fill: #e0b0aa;
+}
 
-                  .ccls-4 {
-                    fill: #c6c1c1;
-                  }
+.ccls-4 {
+  fill: #c6c1c1;
+}
 
-                  .ccls-7 {
-                    fill: #9962bf;
-                  }
+.ccls-7 {
+  fill: #9962bf;
+}
 
-                  .ccls-9 {
-                    fill: #cad7e3;
-                  }
+.ccls-9 {
+  fill: #cad7e3;
+}
 
-                  .ccls-10 {
-                    color: white;
-                    font-size: 30px;
-                  }
+.ccls-10 {
+  color: white;
+  font-size: 30px;
+}
 
-                  .ccls-10, .ccls-11 {
-                    color: white;
-                    font-family: MyriadPro-Regular, 'Myriad Pro';
-                  }
+.ccls-10, .ccls-11 {
+  color: white;
+  font-family: MyriadPro-Regular, 'Myriad Pro';
+}
 
-                  .ccls-12 {
-                    fill: #d24d6f;
-                  }
+.ccls-12 {
+  fill: #d24d6f;
+}
 
-                  .ccls-14 {
-                    fill: #687adf;
-                  }
+.ccls-14 {
+  fill: #687adf;
+}
 
-                  .ccls-11 {
-                    font-size: 24px;
-                  }
+.ccls-11 {
+  font-size: 24px;
+}
 
-                  .ccls-15 {
-                    fill: #d9513e;
-                  }
+.ccls-15 {
+  fill: #d9513e;
+}
 
-                  .ccls-16 {
-                    fill: none;
-                    stroke: #231f20;
-                    stroke-miterlimit: 10;
-                  }
+.ccls-16 {
+  fill: none;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
 
-                  .ccls-17 {
-                    fill: #ca499f;
-                  }
+.ccls-17 {
+  fill: #ca499f;
+}
 
-/* ---------- RESPONSIVE STYLE ---------- */
+/* ---------- RESPONSIVE STYLES ---------- */
 
 @media (max-width: 1024px) {
- .pressure-wrapper {
+  .pressure-wrapper {
     top: 4%;
     font-size: 7vw;
   }
@@ -592,12 +595,12 @@ text {
   }
   
   .wall, .wall img {
-  position: absolute;
-  width: auto;
-  height: 200px;
-  left: 0px;
-  bottom: 0px;
-  z-index: 5;
+    position: absolute;
+    width: auto;
+    height: 200px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
   }
 
   .unstars {
@@ -611,38 +614,38 @@ text {
     bottom: -200px;
     height: 75vh;
     width: auto;
-    pointer-events:none ;
+    pointer-events: none;
     z-index: 4;
   }
 
   .textintro {
     font-size: 3rem;
-    padding: 0 1rem;
+    padding: 1rem 0;
   }
 
   .p_intro {
     font-size: 0.9rem;
-    top: 200px;
+    margin: 1.5rem auto;
     padding: 0 1.5rem;
+    max-width: 95%;
   }
 
   .globe-container {
-    top: 580px;
-    height: 80vh;
+    margin: 2rem 0;
+    min-height: 80vh;
   }
 
   .globe {
     width: 80vmin;
   }
 
- 
   .scroll-section {
     padding-bottom: 30rem; 
     min-height: auto;
   }
 
   .scroll-description {
-    top: 300px;
+    margin: 1.5rem auto;
     font-size: 1.1rem;
     padding: 0.5rem;
   }
@@ -650,14 +653,13 @@ text {
   .info-box {
     pointer-events: none;
   }
-  
 
   .hover-circle {
     pointer-events: none;
   }
 
   #frame {
-    height: 2000px;
+    min-height: 2000px;
   }
 }
 
@@ -668,12 +670,12 @@ text {
   }
   
   .wall, .wall img {
-  position: absolute;
-  width: auto;
-  height: 200px;
-  left: 0px;
-  bottom: 0px;
-  z-index: 5;
+    position: absolute;
+    width: auto;
+    height: 200px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
   }
 
   .unstars {
@@ -687,7 +689,7 @@ text {
     bottom: -100px;
     height: 80vh;
     width: auto;
-    pointer-events:none ;
+    pointer-events: none;
     z-index: 4;
   }
 
@@ -717,25 +719,26 @@ text {
     margin: auto;
     font-size: 15px;
   }
+
   .textintro {
     font-size: 3rem;
-    padding: 0 1rem;
+    padding: 1rem 0;
   }
 
   .p_intro {
     font-size: 0.9rem;
-    top: 160px;
+    margin: 1rem auto;
     padding: 0 1.5rem;
+    max-width: 95%;
   }
 
   .globe-container {
-    top: 300px;
+    margin: 1.5rem 0;
     height: 80vh;
   }
 
   .globe {
     width: 80vmin;
-    margin: 10vh;
   }
 
   .scroll-section {
@@ -744,7 +747,7 @@ text {
   }
 
   .scroll-description {
-    top: 10px;
+    margin: 1rem auto;
     font-size: 1.1rem;
     padding: 1rem;
   }
@@ -771,13 +774,7 @@ text {
     padding: 1rem;
   }
 
-  .party-analysis {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    column-count: 1;
-    padding: 1rem;
-  }
-   .mapdata {
+  .mapdata {
     font-size: 0.95rem;
     padding: 1rem;
   }
@@ -788,19 +785,18 @@ text {
 }
 
 @media (max-width: 480px) {
-
   .pressure-wrapper {
     top: 3%;
     font-size: 9vw;
   }
 
   .wall, .wall img {
-  position: absolute;
-  width: auto;
-  height: 20vh;
-  left: 0px;
-  bottom: 0px;
-  z-index: 5;
+    position: absolute;
+    width: auto;
+    height: 20vh;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
   }
 
   .unstars {
@@ -813,7 +809,7 @@ text {
     position: relative;
     bottom: -100px;
     height: 80vh;
-    pointer-events:none ;
+    pointer-events: none;
     z-index: 4;
   }
 
@@ -846,23 +842,23 @@ text {
 
   .textintro {
     font-size: 2.2rem;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .p_intro {
     font-size: 0.85rem;
-    top: 140px;
+    margin: 1rem auto;
     padding: 0 1rem;
+    max-width: 95%;
   }
 
   .globe-container {
-    top: 450px;
+    margin: 1rem 0;
     height: 70vh;
   }
 
   .globe {
     width: 90vmin;
-    margin: 5vh;
   }
 
   .scroll-section {
@@ -871,9 +867,9 @@ text {
   }
 
   .scroll-description {
-    top: 0px;
+    margin: 0.5rem auto;
     font-size: 1rem;
-    padding: 0rem;
+    padding: 0;
   }
 
   .info-box {
@@ -891,15 +887,4 @@ text {
   #frame {
     height: 2030px;
   }
-}
-
-.static-title {
-  position: relative;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 17vw;
-  text-align: center;
-  margin: 0;
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  z-index: 3;
 }
