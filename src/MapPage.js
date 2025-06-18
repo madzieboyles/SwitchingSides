@@ -64,7 +64,6 @@ function MapPage() {
 
   return (
     <div className="page">
-      <div className="blank"><Navbar /></div>
       <section className="map-hero-section">
         <div className="pressure-wrapper">
           {!isMobile ? (
